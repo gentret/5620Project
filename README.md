@@ -1,1 +1,4 @@
-# PracticalAssessment1 - it's highly practical.
+# Collaborative Project
+# Contributors:
+#   Uriel Avila
+#   Gentre Thomsen
