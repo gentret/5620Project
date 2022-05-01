@@ -6,6 +6,7 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
+/* Define card array for "carousel" */
 $(document).ready(function(){
   const cards=[
     {cardHead: 'Mike Tyson',cardImage: 'assets/img/cards/ace_of_clubs.png'},
@@ -71,8 +72,24 @@ for(let i in cards) { // Loop through each of the objects in the array
   cardTemplate.removeClass('d-none'); // Unhide
   cardTemplate.find('img').prop('src', cards[i].cardImage); // Set the image
   cardTemplate.find('img').prop('title', cards[i].cardHead); // Set the alt
-  cardTemplate.find('h2').text(cards[i].cardHead); // Set the header
+  cardTemplate.find('h1').text(cards[i].cardHead); // Set the header
   cardContainer.append(cardTemplate); // Append to the container
 }
 
- });
+function hideNames() {
+  $('#showName').prop('checked', false);
+  $('.cardText').addClass('d-none');
+  
+  }
+
+function showNames() {
+  $('#hideName').prop('checked', false);
+  $('.cardText').removeClass('d-none');
+    
+    
+  }
+  
+  $('#hideName').on('click', hideNames);
+  $('#showName').on('click', showNames);
+
+});

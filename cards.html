@@ -26,6 +26,8 @@
         rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- Custom CSS-->
+    <link href="css/styleOverrides.css" rel="stylesheet" />
 
     
     <!-- Font Awesome -->
@@ -35,7 +37,7 @@
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light  shadow-sm" id="mainNav">
         <div class="container px-5">
             <a class="navbar-brand fw-bold" href="#page-top">Meta Memory Coach</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -60,12 +62,27 @@
             </div>
         </div>
     </nav>
-    <br>
-    <br><br>
-    <br><br>
-    <div class="col-lg-4 mx-auto w-20 mb-10">
 <!-- BS card container -->
-        <div id="carousel-films" class="carousel carousel-dark" data-bs-ride="carousel" data-bs-interval=0>
+<div class="row">
+    <h1>INSERT MEMORIZATION TECHNIQUE NAME MAYBE?</h1>
+    <p>HERE IS MAYBE A BRIEF EXPLANATION AND WHATNOT</p>
+
+    <fieldset id="radioSelector">
+        <input type="radio" id="hideName" name="hide" value=true checked>
+        <label for="hide">Hide Names</label>
+        <input type="radio" id="showName" name="show" value=false>
+        <label for="show">Show Names</label>
+    </fieldset>
+
+
+
+</div>
+<div class="row" id="contentWrapper">
+    <div class=col-sm>
+        <h1>This is where we put some stuff about the card association memorization.</h1>
+        
+    </div>
+        <div id="carousel-films" class="carousel carousel-dark col-sm-3" data-bs-ride="carousel" data-bs-interval=0>
             <div class="carousel-inner" id="cardCarousel">
             </div>
 
@@ -82,10 +99,10 @@
         </div>
     </div>
     <div class="carousel-item active d-none" id="cardTemplate">
-        <div class="col-lg-4 mx-auto text-center w-20">
-        </div>
-        <img src="" class="d-block w-100" alt="">
+        <h1 class="cardText d-none"></h1>
+        <img class="d-block w-100">
     </div>
+</div>
     <!-- Footer-->
     <footer class="bg-black text-center py-5">
         <div class="container px-5">
