@@ -12,7 +12,7 @@ $(document).ready(function(){
     {cardHead: 'Tonya Harding',cardImage: 'assets/img/cards/2_of_clubs.png'},
     {cardHead: 'Miller',cardImage: 'assets/img/cards/3_of_clubs.png'},
     {cardHead: 'M. Lee',cardImage: 'assets/img/cards/4_of_clubs.png'},
-    {cardHead: '',cardImage: 'assets/img/cards/5_of_clubs.png'},
+    {cardHead: 'No Name Assigned',cardImage: 'assets/img/cards/5_of_clubs.png'},
     {cardHead: 'Maribel',cardImage: 'assets/img/cards/6_of_clubs.png'},
     {cardHead: 'Kurt Kobain',cardImage: 'assets/img/cards/7_of_clubs.png'},
     {cardHead: 'Joan Jett',cardImage: 'assets/img/cards/8_of_clubs.png'},
@@ -28,9 +28,9 @@ $(document).ready(function(){
     {cardHead: 'Ryan? Reynolds',cardImage: 'assets/img/cards/5_of_diamonds.png'},
     {cardHead: 'Xia Ling',cardImage: 'assets/img/cards/6_of_diamonds.png'},
     {cardHead: 'Marty',cardImage: 'assets/img/cards/7_of_diamonds.png'},
-    {cardHead: '',cardImage: 'assets/img/cards/8_of_diamonds.png'},
+    {cardHead: 'No Name Assigned',cardImage: 'assets/img/cards/8_of_diamonds.png'},
     {cardHead: 'Felix',cardImage: 'assets/img/cards/9_of_diamonds.png'},
-    {cardHead: '',cardImage: 'assets/img/cards/10_of_diamonds.png'},
+    {cardHead: 'No Name Assigned',cardImage: 'assets/img/cards/10_of_diamonds.png'},
     {cardHead: 'Gavin Newsome?',cardImage: 'assets/img/cards/jack_of_diamonds.png'},
     {cardHead: 'Ms. Misk',cardImage: 'assets/img/cards/queen_of_diamonds.png'},
     {cardHead: 'Elon Musk?',cardImage: 'assets/img/cards/king_of_diamonds.png'},
@@ -41,7 +41,7 @@ $(document).ready(function(){
     {cardHead: 'Dwayne "The Rock" Johnson',cardImage: 'assets/img/cards/5_of_hearts.png'},
     {cardHead: 'Betty White?',cardImage: 'assets/img/cards/6_of_hearts.png'},
     {cardHead: 'Paul',cardImage: 'assets/img/cards/7_of_hearts.png'},
-    {cardHead: '',cardImage: 'assets/img/cards/8_of_hearts.png'},
+    {cardHead: 'No Name Assigned',cardImage: 'assets/img/cards/8_of_hearts.png'},
     {cardHead: 'Max',cardImage: 'assets/img/cards/9_of_hearts.png'},
     {cardHead: 'Juliette Sebastian',cardImage: 'assets/img/cards/10_of_hearts.png'},
     {cardHead: 'Kelson',cardImage: 'assets/img/cards/jack_of_hearts.png'},
@@ -66,16 +66,13 @@ const cardContainer=$('#cardCarousel'); // Identify the carousel container
 
 for(let i in cards) { // Loop through each of the objects in the array
   const cardTemplate=$('#cardTemplate').clone(); // Copy the template
-  function textToggle () {cardTemplate.find('h2').toggle()}
   cardTemplate.removeClass('active'); // Remove the active class as only the first should be active
   if(i == 0) {cardTemplate.addClass('active')}; // Add the active for the first record
   cardTemplate.removeClass('d-none'); // Unhide
   cardTemplate.find('img').prop('src', cards[i].cardImage); // Set the image
+  cardTemplate.find('img').prop('title', cards[i].cardHead); // Set the alt
   cardTemplate.find('h2').text(cards[i].cardHead); // Set the header
   cardContainer.append(cardTemplate); // Append to the container
-  cardTemplate.find('button').on('click', textToggle());
-
 }
 
-//$('#nameToggle').on('click', console.log());
  });
