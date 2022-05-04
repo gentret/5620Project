@@ -1,4 +1,4 @@
-/* Define card array for "carousel" */
+/* Define array for "carousel" */
 $(document).ready(function(){
   const cards=[
     {cardHead: 'Mike Tyson',cardImage: 'assets/img/cards/ace_of_clubs.png'},
