@@ -223,7 +223,7 @@ span {
   top: 50%;
   left: 8%;
   transform: translateY(-50%);
-  font size: 75px;
+  font-size: 75px;
 }
 
 .content h1{
