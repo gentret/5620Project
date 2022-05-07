@@ -7,7 +7,6 @@
 // Scripts
 // 
 
-
 // Object Literals
 // User Profile
 let user = {
