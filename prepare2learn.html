@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="memory training, memory exercises, memory competition, studying techniques" />
+    <meta name="description" content="" />
 
     <title>Prepare To Learn | Meta Memory Coach</title>
 
@@ -27,6 +27,8 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/quiz.css" rel="stylesheet" />
     
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2fb0084873.js" crossorigin="anonymous"></script>
@@ -65,22 +67,60 @@
 <!-- Success Image-->
     // this div class controls the image, currently it is hero
    <!-- <div class="hero"> -->
+<section>
     <div class="">
         <a href="#" class="btn-logo"></a>
         <h2 class="logo">Memory <span>Athlete</span></h2>
     </div>
-    <div class="content">
-        <h4>Hello, we are...</h4>
-        <h1><span>Uriel </span> Avila</h1>
-        <h1><span>Gentre </span> Thomsen</h1>
-        <h3>Front-End Web Developers</h3>
-        <div class="newsletter">
-            <form>
-                <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-                <input type="submit" name="submit" value="Let's Start">
-            </form>
+</section>
+
+    <!-- Quis Applet -->
+<section class="container px-5">
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">Question text</h2>
+            <ul>
+                <li>
+                    <input
+                        type="radio"
+                        id="a"
+                        name="answer"
+                        class="answer"
+                    />
+                    <label id="a_text" for="a">Question</label>
+                </li>
+                <li>
+                    <input
+                        type="radio"
+                        id="b"
+                        name="answer"
+                        class="answer"
+                    />
+                    <label id="b_text" for="b">Question</label>
+                </li>
+                <li>
+                    <input
+                        type="radio"
+                        id="c"
+                        name="answer"
+                        class="answer"
+                    />
+                    <label id="c_text" for="c">Question</label>
+                </li>
+                <li>
+                    <input
+                        type="radio"
+                        id="d"
+                        name="answer"
+                        class="answer"
+                    />
+                    <label id="d_text" for="d">Question</label>
+                </li>
+            </ul>
         </div>
+        <button id="submit">Submit</button>
     </div>
+</section>
     
 
 
@@ -98,8 +138,8 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <script src="js/dominicSystem.js"></script>
+    <script src="js/prepare2learn.js"></script>
+    
 </body>
 
 </html>

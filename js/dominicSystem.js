@@ -1,26 +1,5 @@
-var data = {
-    id: '01',
-    name: 'Uriel',
-    age: 31,
-    maritalStatus: true
-}
-
-console.log(data['maritalStatus'])
-
-// var elem connects to the headding names: id, name, age, marritalStatus
-for (var elem in data) {
-
-    // Displaus the headding names
-    // console.log(elem)
-
-    // Displaus the headding names and their values
-    console.log(elem, data[elem]);
-}
-
-
-// Which one is correct?
-// This ObjArr has embeded objects[tools] and arrays {exams}
-// This ObjArr has embeded arrays[tools] and objects {exams}
+(function () {
+// Leave as IIFE
 
 
 // The Creation of the Dominic System Object Array.
@@ -39,8 +18,8 @@ const dominicSystemObjectArray = [
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 75, 
+            final: 67
         }
     },{
         id: '01',
@@ -49,14 +28,14 @@ const dominicSystemObjectArray = [
         lastName: 'The One',
         action: 'stops',
         object: 'bullets',
-        story: 'Neo dove into Mr. Smith after stoping the bullets. His hydrogen core exploded red in color',
+        story: 'Neo dove into Mr. Smith after stoping the bullets. His hydrogen core exploded red in color.',
         tools: ['Memory Palace', 'Deck of Cards'],
         complete: true,
-        exception: false,
+        exception: true,
         exams: { 
             quiz: 78,
-            midterm: 85, 
-            final: 86
+            midterm: 65, 
+            final: 51
         }
     },{
         id: '02',
@@ -65,14 +44,14 @@ const dominicSystemObjectArray = [
         lastName: 'Kenobi',
         action: 'swinging',
         object: 'light-sabre',
-        story: 'His light-sabre pulls helium out of the sun',
+        story: 'His light-sabre pulls helium out of the sun.',
         tools: ['Memory Palace', 'Deck of Cards'],
         complete: true,
         exception: false,
         exams: { 
             quiz: 88,
             midterm: 83, 
-            final: 89
+            final: 67
         }
     },{
         id: '03',
@@ -88,7 +67,7 @@ const dominicSystemObjectArray = [
         exams: { 
             quiz: 88,
             midterm: 83, 
-            final: 89
+            final: 67
         }
     },{
         id: '04',
@@ -103,8 +82,8 @@ const dominicSystemObjectArray = [
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 75, 
+            final: 76
         }
     },{
         id: '05',
@@ -119,8 +98,8 @@ const dominicSystemObjectArray = [
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 75, 
+            final: 76
         }
     },{
         id: '06',
@@ -135,8 +114,8 @@ const dominicSystemObjectArray = [
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 79, 
+            final: 76
         }
     },{
         id: '07',
@@ -150,9 +129,9 @@ const dominicSystemObjectArray = [
         complete: true,
         exception: true,
         exams: { 
-            quiz: 89,
-            midterm: 94, 
-            final: 88
+            quiz: 88,
+            midterm: 74, 
+            final: 59
         }
     },{
         id: '08',
@@ -167,8 +146,8 @@ const dominicSystemObjectArray = [
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 68, 
+            final: 59
         }
     },{
         id: '09',
@@ -183,8 +162,8 @@ const dominicSystemObjectArray = [
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 68, 
+            final: 59
         }
     },{
         id: '10',
@@ -199,8 +178,8 @@ const dominicSystemObjectArray = [
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 68, 
+            final: 59
         }
     },{
         id: '11',
@@ -209,14 +188,14 @@ const dominicSystemObjectArray = [
         lastName: 'Avila',
         action: 'smoking',
         object: 'meats',
-        story: 'Aloson Avila is adding the perfect amount of sodium to the the meat.',
+        story: 'Alonso Avila is adding the perfect amount of sodium to the the meat.',
         tools: ['Memory Palace', 'Journey method', 'Deck of Cards'],
         complete: true,
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 62, 
+            final: 45
         }
     },{
         id: '12',
@@ -231,8 +210,8 @@ const dominicSystemObjectArray = [
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 62, 
+            final: 45
         }
     },{
         id: '13',
@@ -247,8 +226,8 @@ const dominicSystemObjectArray = [
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 62, 
+            final: 45
         }
     },{
         id: '14',
@@ -263,8 +242,8 @@ const dominicSystemObjectArray = [
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 62, 
+            final: 45
         }
     },{
         id: '15',
@@ -273,14 +252,14 @@ const dominicSystemObjectArray = [
         lastName: 'Emery',
         action: 'skinny-dipping',
         object: 'jacuzzi',
-        story: '.',
+        story: 'Amanda is in a jacuzzi in Kentucky.',
         tools: ['Memory Palace', 'Journey method', 'Deck of Cards'],
-        complete: false,
+        complete: true,
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 65, 
+            final: 55
         }
     },{
         id: '16',
@@ -295,8 +274,8 @@ const dominicSystemObjectArray = [
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 65, 
+            final: 55
         }
     },{
         id: '17',
@@ -311,8 +290,8 @@ const dominicSystemObjectArray = [
         exception: false,
         exams: { 
             quiz: 87,
-            midterm: 92, 
-            final: 89
+            midterm: 65, 
+            final: 55
         }
     },{
         id: '18',
@@ -326,9 +305,9 @@ const dominicSystemObjectArray = [
         complete: false,
         exception: false,
         exams: { 
-            quiz: 87,
-            midterm: 92, 
-            final: 89
+            quiz: 57,
+            midterm: 65, 
+            final: 53
         }
     },{
         id: '19',
@@ -342,9 +321,9 @@ const dominicSystemObjectArray = [
         complete: true,
         exception: false,
         exams: { 
-            quiz: 87,
-            midterm: 92, 
-            final: 89
+            quiz: 68,
+            midterm: 61, 
+            final: 53
         }
     },{
         id: '20',
@@ -358,9 +337,9 @@ const dominicSystemObjectArray = [
         complete: true,
         exception: false,
         exams: { 
-            quiz: 87,
-            midterm: 92, 
-            final: 89
+            quiz: 67,
+            midterm: 61, 
+            final: 53
         }
     },{
         id: '21',
@@ -374,9 +353,9 @@ const dominicSystemObjectArray = [
         complete: true,
         exception: false,
         exams: { 
-            quiz: 87,
-            midterm: 92, 
-            final: 89
+            quiz: 45,
+            midterm: 45, 
+            final: 44
         }
     },{
         id: '22',
@@ -390,9 +369,9 @@ const dominicSystemObjectArray = [
         complete: true,
         exception: false,
         exams: { 
-            quiz: 87,
-            midterm: 92, 
-            final: 89
+            quiz: 50,
+            midterm: 46, 
+            final: 44
         }
     },{
         id: '23',
@@ -406,9 +385,9 @@ const dominicSystemObjectArray = [
         complete: true,
         exception: false,
         exams: { 
-            quiz: 87,
-            midterm: 92, 
-            final: 89
+            quiz: 50,
+            midterm: 46, 
+            final: 44
         }
     },{
         id: '24',
@@ -422,9 +401,9 @@ const dominicSystemObjectArray = [
         complete: true,
         exception: false,
         exams: { 
-            quiz: 87,
-            midterm: 92, 
-            final: 89
+            quiz: 60,
+            midterm: 46, 
+            final: 45
         }
     },{
         id: '25',
@@ -433,191 +412,326 @@ const dominicSystemObjectArray = [
         lastName: 'Elliot',
         action: 'dancing',
         object: 'ballet',
-        story: '',
+        story: 'Billy Ellliot is dancing.',
         tools: ['Memory Palace', 'Journey method', 'Deck of Cards'],
-        complete: false,
+        complete: true,
         exception: false,
         exams: { 
-            quiz: 87,
-            midterm: 92, 
-            final: 89
+            quiz: 70,
+            midterm: 46, 
+            final: 45
         }
     },
 
 ]
 
-// Average .  This average is not working in the array.
-// const avg = (dominicSystemObjectArray.exams.quiz + dominicSystemObjectArray.exams.midterm + dominicSystemObjectArray.exams.final);
-
-console.log("First array typing in js. ", dominicSystemObjectArray);
-
-
-// The Creation of the Dominic System Object Array.
-// This should show the object array with the iten names followed by the values
-let progressionDominicSystemArray = [...new Map(dominicSystemObjectArray.map((item) => [item["firstName"], item])).values()]
-
-
-// Shows the lable name and value for each item. Currently therere are (6)
-console.log("New Map Array ", progressionDominicSystemArray)
-
-// Creating a test pregression on the DS and making test item id into the key Map(6)
-let test_progressionDominicSystemArray_map = dominicSystemObjectArray.map((item) => [item["id"], item])
+//////// Display the Array on HTML
+function populateCompletedList(people) {
+    const listNode = document.querySelector("#completedList");
+    const dsOptions = people.filter(
+      (option) => option.complete === true
+    );
+    dsOptions.forEach((option) => {
+      let person = document.createElement("li");
+      person.textContent = option.dsAbbreviation + "  " + option.id + " " + option.firstName + " " + option.lastName + " " + option.action + " " + option.object;
+      listNode.appendChild(person);
+      
+    });
+  }
+  populateCompletedList(dominicSystemObjectArray);
 
 
-//  Shows the list as an array with the id, and the details for each entry
-console.log("The test_progressionDominicSystemArray_map shows: ", test_progressionDominicSystemArray_map);
-
-// testing the newMap object array contains the values in each id value
-let test_progressionDominicSystemArray_newMap = new Map(test_progressionDominicSystemArray_map);
-
-console.log(test_progressionDominicSystemArray_newMap);
-
-// Create a list of all the keys and make an iterator. Single value as the key MapIterator
-let test_uniqueObjArray_newMapKeys = test_progressionDominicSystemArray_newMap.keys();
-
-console.log(test_uniqueObjArray_newMapKeys);
-
-
-// Create a list of all the values and make an iterator for each one. All the fields with name PAO
-let test_uniqueObjArray_newMapValues = test_progressionDominicSystemArray_newMap.values();
-
-// These objects shows the DS entries with the details.  MapIterator
-console.log(test_uniqueObjArray_newMapValues);
-
-// A spread operator in a new array with backets [...] and dots.  (6)
-// This made the onject array into another array from the test_uniqueObjArray_newMapValues
-let test_uniqueObjArray_newMapValuesAsArray = [...test_uniqueObjArray_newMapValues];
-
-console.log("DS Object in a new array ", test_uniqueObjArray_newMapValuesAsArray);
-
-// Filter and show the last name for each ID as an object
-const filteredLastName = dominicSystemObjectArray.map((item) => [item["lastName"], item])
- console.log("The last Names are " + filteredLastName);
-
- 
- // Get the names of each of the DS list
-
-// Creating a test pregression on the DS and making test item id into the key Map(6)
-const firtNameDominicSystemArray_map = dominicSystemObjectArray.map((item) => [item["firstName"], item])
-
-console.log("The firtName in the DS Array_map shows: ", firtNameDominicSystemArray_map);
-
-// Creating a list of actions on the DS and making 
-const actionArray_map = dominicSystemObjectArray.map((item) => [item["action"], item])
-
-console.log("The action in the DS Array_map shows: ", actionArray_map);
-
-// Creating a list of actions on the DS and making 
-const dsObjectArray_map = dominicSystemObjectArray.map((item) => [item["object"], item])
-
-console.log("The action in the DS Array_map shows: ", dsObjectArray_map);
-
-// List the items in the Array with PAO status complete being true or false 
-const dsCompletedObjectArray_map = dominicSystemObjectArray.map((item) => [item["complete"], item])
-console.log("The PAO fields in the DS Array_map are: ", dsCompletedObjectArray_map);
-
-// List the items in the Array with PAO being complete 
-const dsIncompleteObjectArray_map = dominicSystemObjectArray.map((item) => [item["complete"], item])
-    // Need to filter and make new lists between true and false    
-//return dominicSystemObjectArray.complete == false;
-console.log("The PAO fields are all completed in the DS Array_map are: ", dsIncompleteObjectArray_map);
+  // Incomplete list needing updates by the user/student
+  function populateIncompleteList(people) {
+    const listNode = document.querySelector("#incompleteList");
+    const dsOptions = people.filter(
+      (option) => option.complete === false
+    );
+    dsOptions.forEach((option) => {
+      let person = document.createElement("li");
+      person.textContent = option.dsAbbreviation + "  " + option.id + " " + option.firstName + " " + option.lastName + " " + option.action + " " + option.object;
+      listNode.appendChild(person);
+      
+    });
+  }
+  populateIncompleteList(dominicSystemObjectArray);
 
 
-console.log("Sorting by first and last name, PAO")
+// Listing of the actions/verbs each person is doing complete and incomplete
+function populateVerbList(people) {
+    const listNode = document.querySelector("#verbAction");
+    const dsOptions = people.filter(
+      (option) => option.complete === false || true
+    );
+    dsOptions.forEach((option) => {
+      let person = document.createElement("li");
+      person.textContent = option.id + "  " + option.dsAbbreviation + " " + option.action;
+      listNode.appendChild(person);
+      
+    });
+  }
+  populateVerbList(dominicSystemObjectArray);
 
-// Sort the list of the items is the DS by lastName
-const sortLastname = dominicSystemObjectArray.sort(function(a, b) {
-    if (a.lastName.toLowerCase() < b.lastName.toLowerCase()
-    ) return -1;
-    if (a.lastName.toLocaleLowerCase() > b.lastName.toLocaleLowerCase()
-    ) return 1;
-    return 0;
+  // Listing of the objects/nouns each person is doing complete and incomplete
+function populateObjectList(people) {
+    const listNode = document.querySelector("#nounObject");
+    const dsOptions = people.filter(
+      (option) => option.complete === false || true
+    );
+    dsOptions.forEach((option) => {
+      let person = document.createElement("li");
+      person.textContent = option.dsAbbreviation + " " + option.id + " " + option.object;
+      listNode.appendChild(person);
+      
+    });
+  }
+  populateObjectList(dominicSystemObjectArray);
+
+  // Listing the number exceptions for each person by id
+  function populatExceptionsList(people) {
+    const listNode = document.querySelector("#exceptions");
+    const dsOptions = people.filter(
+      (option) => option.exception === true
+    );
+    dsOptions.forEach((option) => {
+      let person = document.createElement("li");
+      person.textContent = option.dsAbbreviation + " " + option.id + " " + option.firstName + " " + option.lastName + " " + option.action + " " + option.object;
+      listNode.appendChild(person);
+    });
+  }
+  populatExceptionsList  (dominicSystemObjectArray);
+
+    // Listing the stories for each person complete and incomplete
+    function populatStoryList(people) {
+        const listNode = document.querySelector("#story");
+        const dsOptions = people.filter(
+          (option) => option.complete === false || true
+        );
+        dsOptions.forEach((option) => {
+          let person = document.createElement("li");
+          person.textContent = option.id + " " + option.dsAbbreviation + " " + option.story;
+          listNode.appendChild(person);
+        });
+      }
+      populatStoryList  (dominicSystemObjectArray);
+  
+      
+          // Listing the tools for each person
+    function populateToolsList(people) {
+        const listNode = document.querySelector("#tools");
+        const dsOptions = people.filter(
+          (option) => option.complete === false || true
+        );
+
+        // List the mnemonic tools applicable
+        const mnemonicTools = dominicSystemObjectArray.filter(tool => tool)
+        dsOptions.forEach((option) => {
+          let person = document.createElement("li");
+          person.textContent = option.id + " " + option.dsAbbreviation + " " + option.tools;
+          listNode.appendChild(person);
+        });
+        
+      }
+      populateToolsList  (dominicSystemObjectArray);
+      
+
+
+    // Listing the Seconds/Time for for each person all
+    function populateTime2Code(people) {
+    const listNode = document.querySelector("#timeCode");
+    const dsOptions = people.filter(
+        (option) => option.exams
+    );
+
+    // List the ALL exams time in seconds
+    const quizTime = dominicSystemObjectArray.filter(examsEl => (examsEl.exams.quiz >= 70 && examsEl.exams.quiz <= 87));
+    dsOptions.forEach((option) => {
+        let person = document.createElement("li");
+        person.textContent = option.id + " " + option.dsAbbreviation + " " + option.exams.quiz  + " " + option.exams.midterm + " " + option.exams.final;
+        listNode.appendChild(person);
+    });
+
+    }
+    populateTime2Code (dominicSystemObjectArray);
+
+    // Listing the Improvement made in Seconds/Time 
+    function timeImprovement(people) {
+        const listNode = document.querySelector("#improvedTime");
+        const dsOptions = people.filter(
+            (option) => option.exams
+        );
+    
+        // List tme improvement between the quiz and final in seconds
+        const quizTime = dominicSystemObjectArray.filter(examsEl => (examsEl.exams.quiz >= 70 && examsEl.exams.quiz <= 87));
+        dsOptions.forEach((option) => {
+            let person = document.createElement("li");
+         person.textContent = `${option.id} ${option.dsAbbreviation} Student Reduced their time by [${option.exams.quiz} - ${option.exams.final}] seconds`;
+        //   person.textContent = option.id + "  " + option.dsAbbreviation + "  Student Reduced their time by:  " + (option.exams.quiz  - option.exams.final + " seconds");
+            listNode.appendChild(person);
+        });
+    
+        }
+        timeImprovement (dominicSystemObjectArray);
+    
+   
+// Get quiz time for each number/person/PAO quiz score between two numbers
+    const timeTemplate = dominicSystemObjectArray.filter(quizEl => (quizEl.exams.quiz >= 60 && quizEl.exams.quiz <= 87));
+    console.log("List of Time for each Student to Recall each number");
+    console.log(timeTemplate);
+
+// Sorted listing of the verbs each person is doing complete and incomplete
+function sortedVerbList(people) {
+    const listNode = document.querySelector("#sortedVerbs");
+    const sortedVerbs = dominicSystemObjectArray.sort(function(verb1, verb2) {
+        if(verb1.action > verb2.action) {
+            return 1;
+        } else  {
+            return -1;
+        }
+    });
+    const dsOptions = people.filter(
+      (option) => option.complete === false || true
+    );
+    dsOptions.forEach((option) => {
+      let person = document.createElement("li");
+      person.textContent = option.id + "  " + option.dsAbbreviation + " " + option.action;
+      listNode.appendChild(person);
+      
+    });
+  }
+  sortedVerbList(dominicSystemObjectArray);
+
+// Sorted listing of the nouns each person is doing complete and incomplete
+function populateNounList(people) {
+    const listNode = document.querySelector("#sortedNouns");
+    const sortedNouns = dominicSystemObjectArray.sort(function(noun1, noun2) {
+        if(noun1.object > noun2.object) {
+            return 1;
+        } else  {
+            return -1;
+        }
+    });
+    const dsOptions = people.filter(
+      (option) => option.complete === false || true
+    );
+    dsOptions.forEach((option) => {
+      let person = document.createElement("li");
+      person.textContent = option.id + "  " + option.dsAbbreviation + " " + option.object;
+      listNode.appendChild(person);
+      
+    });
+  }
+  populateNounList(dominicSystemObjectArray);
+
+// Sorted first Names for each person is doing complete and incomplete
+function populateFirstNames(people) {
+    const listNode = document.querySelector("#sortedFirstNames");
+    const sortedFirst = dominicSystemObjectArray.sort(function(firstName1, firstName2) {
+        if(firstName1.firstName > firstName2.firstName) {
+            return 1;
+        } else  {
+            return -1;
+        }
+    });
+    const dsOptions = people.filter(
+      (option) => option.complete === false || true
+    );
+    dsOptions.forEach((option) => {
+      let person = document.createElement("li");
+      person.textContent = `${option.id} ${option.dsAbbreviation} ${option.firstName} ${option.lastName}` 
+      listNode.appendChild(person);
+      
+    });
+  }
+  populateFirstNames(dominicSystemObjectArray);
+
+
+// Listing the Time for for each person all/average
+
+// Listing the Time for for each person's quiz with the average per PAO
+
+function populateQuiz(people) {
+    const listNode = document.querySelector("#populateQuiz");
+    
+    let initialValue = 0;
+    for(let i of dominicSystemObjectArray) {
+        initialValue += i.exams.quiz;
+    };
+    const averageQuiz = initialValue / dominicSystemObjectArray.length;
+    console.log('', initialValue, averageQuiz );
+    
+    //return 0;
+
+    const dsOptions = people.filter(
+      (option) => option.complete === false || true
+    );
+
+    
+    
+    dsOptions.forEach((option) => {
+      let person = document.createElement("li");
+      person.textContent = `The Average quiz is ${averageQuiz.toFixed(2)}: Number ${option.id} with initials of ${option.dsAbbreviation} and a name of ${option.firstName} ${option.lastName} has a time of ${option.exams.quiz} seconds to recall.
+      This is an improvement from  ${option.exams.quiz}` 
+      listNode.appendChild(person);
+      
+    });
+  }
+  populateQuiz(dominicSystemObjectArray);
+
+
+  // Listing of Time Improvements made by the student
+const improvedTime = dominicSystemObjectArray.filter(improvement => (improvement.exams.quiz - improvement.exams.final <= 15));
+console.log(improvedTime);
+
+
+  // Listing the Average Time for the quiz Only
+function onlyAvgQuiz(people) {
+    const listNode = document.querySelector("#onlyAvgQuiz");
+    
+    let initialValue = 0;
+    for(let i of dominicSystemObjectArray) {
+        initialValue += i.exams.quiz;
+    };
+    const averageQuiz = initialValue / dominicSystemObjectArray.length;
+   // console.log('', initialValue, averageQuiz );
+    
+    //return 0;
+
+    const dsOptions = people.filter(
+      (option) => option.complete === false || true
+    );
+
+    
+    
+    dsOptions.forEach((option) => {
+      let person = document.createElement("li");
+      person.textContent = `The Average quiz is ${averageQuiz.toFixed(2)}
+      This is an improvement from  ${option.exams.quiz}` 
+      listNode.appendChild(person);
+      
+    });
+  }
+  onlyAvgQuiz(dominicSystemObjectArray);
+
+// Listing the Time for for each person's midterms
+// Listing the Time for for each person's final
+
+
+
+// shorter version to get sorted items
+const sortedFirstNames = dominicSystemObjectArray.sort((a, b) => (a.firstName > b.firstName ? 1 : -1));
+// console.log(sortedFirstNames);
+
+/* to be reused to create sortedNouns
+const sortedVerbs = dominicSystemObjectArray.sort(function(verb1, verb2) {
+    if(verb1.action > verb2.action) {
+        return 1;
+    } else  {
+        return -1;
+    }
 });
-console.log("Sorting the array by lastname")
-console.log(sortLastname);
+*/
+          
 
-// Sort the list of the items is the DS by firstName
-const sortFirstName = dominicSystemObjectArray.sort(function(a, b) {
-    if (a.firstName.toLowerCase() < b.firstName.toLowerCase()
-    ) return -1;
-    if (a.firstName.toLocaleLowerCase() > b.firstName.toLocaleLowerCase()
-    ) return 1;
-    return 0;
-});
-console.log("Sorting the array by firstName")
-console.log(sortFirstName);
-
-// Sort the list of the items is the DS by action
-const sortAction = dominicSystemObjectArray.sort(function(a, b) {
-    if (a.action.toLowerCase() < b.action.toLowerCase()
-    ) return -1;
-    if (a.action.toLocaleLowerCase() > b.action.toLocaleLowerCase()
-    ) return 1;
-    return 0;
-});
-console.log("Sorting the array by Action")
-console.log(sortAction);
-
-// Sort the list of the items is the DS by object
-const sortObject = dominicSystemObjectArray.sort(function(a, b) {
-    if (a.object.toLowerCase() < b.object.toLowerCase()
-    ) return -1;
-    if (a.object.toLocaleLowerCase() > b.object.toLocaleLowerCase()
-    ) return 1;
-    return 0;
-});
-console.log("Sorting the array by the PAO object field")
-console.log(sortObject);
-
-// Sort the list of the items is the exams by quiz
-const sortExamsQuiz = dominicSystemObjectArray.sort(function(a, b) {
-    return a.exams.quiz - b.exams.quiz;
-});
-console.log("Sorting the array by the exams")
-console.log(sortExamsQuiz);
-
-// Sort the list of the items is the exams by midterm
-const sortExamsMidterm = dominicSystemObjectArray.sort(function(a, b) {
-    return a.exams.midterm - b.exams.midterm;
-});
-console.log("Sorting the array by the Midterms")
-console.log(sortExamsMidterm);
-
-// Sort the list of the items is the exams by final
-const sortExamsFinals = dominicSystemObjectArray.sort(function(a, b) {
-    return a.exams.final - b.exams.final;
-});
-console.log("Sorting the array by the Finals")
-console.log(sortExamsFinals);
-
-// Sort the list of the items is the exams by tools
-// Sortin the tools is not working
-const sortTools = dominicSystemObjectArray.sort(function(a, b) {
-    return a.tools - b.tools;
-});
-console.log("Sorting the array by the Tools")
-console.log(sortTools);
-
-// Sort Ascending the list of ids 
-const sortAscendingIDs = dominicSystemObjectArray.sort(function(a, b) {
-    return a.id - b.id;
-});
-console.log("Sort Ascending the array by IDs")
-console.log(sortAscendingIDs);
-
-// Sort Descending the list of ids 
-const sortDescendingIDs = dominicSystemObjectArray.sort(function(a, b) {
-    return  b.id - a.id;
-});
-console.log("Sort Descending the array by IDs")
-console.log(sortDescendingIDs);
-
-// Indexing the items that are not complete and need to do
-// dsNumbers that are incomplete
-const findTodo = function(myTodos, action) {
-    const index =myTodos.findIndex(function(todo, index) {
-    return todo.action.toLocaleLowerCase() === action.toLocaleLowerCase()
-    })
-}
-
-console.log(findTodo);
+// Leave as IIFE
+})();
