@@ -31,6 +31,7 @@ $(document).ready(function () {
     { locationTitle: "", locationNarrative: "" },
     { locationTitle: "", locationNarrative: "" },
     { locationTitle: "", locationNarrative: "" },
+    { locationTitle: "", locationNarrative: "" },
     { locationTitle: "", locationNarrative: "" }
   ]
 
@@ -58,7 +59,7 @@ $(document).ready(function () {
     if (i == 0) { locationTemplate.addClass('active') }; // Add the active for the first record
     locationTemplate.removeClass('d-none'); // Unhide
     locationTemplate.find('img').prop('src', imagePath); // Set the image
-    locationTemplate.find('h5').text(locationHead); // Set the header
+    locationTemplate.find('h2').text(locationHead); // Set the header
     locationTemplate.find('p').text(locations[i].locationNarrative); // Set the narrative
     locationCarousel.append(locationTemplate); // Append to the container
   }

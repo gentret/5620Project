@@ -16,7 +16,7 @@ const quizData = [
         correct: 'b'
     }, 
     {
-        question: 'What type of languate is the Dominic System?',
+        question: 'What type of language is the Dominic System?',
         a: 'Spanish',
         b: 'English',
         c: 'Language of Numbers',
