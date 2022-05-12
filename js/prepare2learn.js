@@ -1,4 +1,12 @@
 const quizData = [
+        {
+        question: 'Who does the Ace of Diamonds represent?',
+        a: 'Dwane Johnson',
+        b: 'Lebron James',
+        c: 'Betty White',
+        d: 'Serena Williams',
+        correct: 'b'
+    }, 
     {
         question: 'What does the acronym MP represent?',
         a: 'Memory Palace',
