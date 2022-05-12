@@ -25,7 +25,7 @@ $(document).ready(function(){
     {cardHead: 'Felix',cardImage: 'assets/img/cards/9_of_diamonds.png'},
     {cardHead: 'No Name Assigned',cardImage: 'assets/img/cards/10_of_diamonds.png'},
     {cardHead: 'Gavin Newsome',cardImage: 'assets/img/cards/jack_of_diamonds.png'},
-    {cardHead: 'Mrs. Musk',cardImage: 'assets/img/cards/queen_of_diamonds.png'},
+    {cardHead: 'Justine Musk',cardImage: 'assets/img/cards/queen_of_diamonds.png'},
     {cardHead: 'Elon Musk',cardImage: 'assets/img/cards/king_of_diamonds.png'},
     {cardHead: 'Shaquille Oneal',cardImage: 'assets/img/cards/ace_of_hearts.png'},
     {cardHead: 'Zhang',cardImage: 'assets/img/cards/2_of_hearts.png'},
