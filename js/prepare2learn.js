@@ -72,9 +72,9 @@ const quizData = [
     {
         question: 'Who does the number 22 represent?',
         a: 'Bugs Bunny',
-        b: 'Ben Aflec',
+        b: 'Ben Afleck',
         c: 'Al Capone',
-        d: 'James Bond',
+        d: 'Antonio Banderas',
         correct: 'a'
     }, 
     {
